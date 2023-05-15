@@ -13,5 +13,5 @@ $names = [
 ];
 
 foreach ($names as $key => $name) {
-  echo "{$name} <br>";
+  echo " {$key} => {$name} <br>";
 }
