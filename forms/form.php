@@ -1,5 +1,11 @@
 <?php
 
+if ($_REQUEST['nome'] == '' && strlen($_REQUEST['nome']) <= 3) {
+  echo 'O campo nome é invalido';
+
+  return;
+}
+
 echo "Nome: {$_REQUEST['nome']}";
 echo '<hr/>';
 echo "Senha: {$_REQUEST['senha']}";
@@ -14,6 +20,8 @@ echo "Estado: {$_REQUEST['estado']}";
 echo '<hr/>';
 echo "Descrição: {$_REQUEST['descricao']}";
 echo '<hr/>';
+
+
 
 // echo "Nome: {$_POST['nome']}";
 // echo '<hr/>';
