@@ -1,16 +1,31 @@
 <?php
 
-echo "Nome: {$_POST['nome']}";
+echo "Nome: {$_REQUEST['nome']}";
 echo '<hr/>';
-echo "Senha: {$_POST['senha']}";
+echo "Senha: {$_REQUEST['senha']}";
 echo '<hr/>';
-echo "Email: {$_POST['email']}";
+echo "Email: {$_REQUEST['email']}";
 echo '<hr/>';
-echo "Concordo:" . isset($_POST['concordo']) && $_POST['concordo'] != '' ? 'sim' : 'não';
+echo "Concordo:" . isset($_REQUEST['concordo']) && $_REQUEST['concordo'] != '' ? 'sim' : 'não';
 echo '<hr/>';
-echo "Sexo: {$_POST['sexo']}";
+echo "Sexo: {$_REQUEST['sexo']}";
 echo '<hr/>';
-echo "Estado: {$_POST['estado']}";
+echo "Estado: {$_REQUEST['estado']}";
 echo '<hr/>';
-echo "Descrição: {$_POST['descricao']}";
+echo "Descrição: {$_REQUEST['descricao']}";
 echo '<hr/>';
+
+// echo "Nome: {$_POST['nome']}";
+// echo '<hr/>';
+// echo "Senha: {$_POST['senha']}";
+// echo '<hr/>';
+// echo "Email: {$_POST['email']}";
+// echo '<hr/>';
+// echo "Concordo:" . isset($_POST['concordo']) && $_POST['concordo'] != '' ? 'sim' : 'não';
+// echo '<hr/>';
+// echo "Sexo: {$_POST['sexo']}";
+// echo '<hr/>';
+// echo "Estado: {$_POST['estado']}";
+// echo '<hr/>';
+// echo "Descrição: {$_POST['descricao']}";
+// echo '<hr/>';
